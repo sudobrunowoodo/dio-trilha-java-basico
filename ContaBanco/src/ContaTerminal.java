@@ -19,16 +19,14 @@ public class ContaTerminal {
 
         System.out.println("Digite o seu nome: ");
         String nomeCliente = scanner.next();
-
-        System.out.println("Digite o seu sobrenome: ");
-        String sobrenomeCliente = scanner.next();
+        String sobrenomeCliente = scanner.nextLine();
 
         System.out.println("Informe o seu saldo (Decimal separado por ponto): ");
         double valorSaldo = scanner.nextDouble();
 
         //Exibir a mensagem conta criada
         //Concatenando os inputs para mostrar a mensagem de conta criada
-        System.out.println("Olá " + nomeCliente + " "+ sobrenomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é: "
+        System.out.println("Olá " + nomeCliente + sobrenomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é: "
          + numeroAgencia + ", conta: " + numeroConta + " e seu saldo: " + valorSaldo + " já está disponível para saque.");
     }
 
