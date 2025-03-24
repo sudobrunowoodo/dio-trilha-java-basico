@@ -24,6 +24,8 @@ public class ContaTerminal {
         System.out.println("Informe o seu saldo (Decimal separado por ponto): ");
         double valorSaldo = scanner.nextDouble();
 
+        scanner.close();
+
         //Exibir a mensagem conta criada
         //Concatenando os inputs para mostrar a mensagem de conta criada
         System.out.println("Olá " + nomeCliente + sobrenomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é: "
